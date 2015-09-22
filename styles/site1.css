@@ -1,3 +1,33 @@
+body{
+	margin: 0;
+	background: purple;
+}
+
+img, 
+video,
+iframe {
+	max-width: 100%;
+	height: auto;
+}
+
+
+.container {
+	width: 90%;
+	max-width: 760px;
+	margin: 0 auto;
+
+}	
+
+/*
+masthead layout
+this shows at the top of the page and includes the navigation.
+*/
+
+
+.masthead {
+	background: black;
+}
+
 .nav {
 	padding:  0; 
 	list-style: none;
