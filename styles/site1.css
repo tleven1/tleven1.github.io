@@ -1,0 +1,66 @@
+.nav {
+	padding:  0; 
+	list-style: none;
+} 
+
+.nav li{
+	display: inline-block;
+}
+
+
+.nav a {
+	display: inline-block;
+	position: relative;
+	padding: 1em;
+	background: lavender;
+	transition: all 1s ease-out;
+}
+
+
+.nav a:hover {
+	color: white;
+	background: black;
+	transition-duration: .3s;
+}
+
+.nav a:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 0%;
+	height: 100%;
+	background: grey;
+	transition: all .3s ease-in;
+}
+
+.nav a:hover:after{
+	width: 100%
+	}
+.nav.center{
+	text-align: center;
+}
+
+.nav.fit{
+	display: table;
+	width:100%;
+}
+
+.nav.fit li{
+	display:table-cell;
+}
+	
+.nav.fit a{
+	display:block;
+	}
+	
+	
+.bar  {
+
+}
+
+#primary-nav {
+
+}
+
