@@ -18,6 +18,11 @@ iframe {
 
 }	
 
+.clear {
+	overflow: hidden; 
+} 
+
+
 /*
 masthead layout
 this shows at the top of the page and includes the navigation.
@@ -34,12 +39,12 @@ this shows at the top of the page and includes the navigation.
 } 
 
 .nav li{
-	display: inline-block;
+	display: block;
 }
 
 
 .nav a {
-	display: inline-block;
+	display: block;
 	position: relative;
 	padding: 1em;
 	background: lavender;
@@ -72,18 +77,52 @@ this shows at the top of the page and includes the navigation.
 	text-align: center;
 }
 
-.nav.fit{
-	display: table;
-	width:100%;
+@media (min-width:  500px) {
+	.nav.fit{
+		display: table;
+		width:100%;
+	}
+
+	.nav.fit li{
+		display:table-cell;
+	}
+	
+	.nav.fit a{
+		display:block;
+	}
+
 }
 
-.nav.fit li{
-	display:table-cell;
+.main-content{
+	background: pink;
+}
+
+.sub-content{	
+	background: orange;
 }
 	
-.nav.fit a{
-	display:block;
+@media (min-width: 500px) {
+	.main-content {
+	float: left;
+	width: 60%;
+	margin-left: 20%;
+
 	}
+	
+	.sub-content{
+	float: left;
+	width: 20%;
+	margin-left: -80%;
+	}
+	
+	.third-content {
+	float: left;
+	width: 20%;
+}	
+	
+}	
+	
+	
 	
 	
 .bar  {
