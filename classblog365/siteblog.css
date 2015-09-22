@@ -1,0 +1,135 @@
+body{
+	margin: 0;
+	background: purple;
+}
+
+img, 
+video,
+iframe {
+	max-width: 100%;
+	height: auto;
+}
+
+
+.container {
+	width: 90%;
+	max-width: 760px;
+	margin: 0 auto;
+
+}	
+
+.clear {
+	overflow: hidden; 
+} 
+
+
+/*
+masthead layout
+this shows at the top of the page and includes the navigation.
+*/
+
+
+.masthead {
+	background: black;
+}
+
+.nav {
+	padding:  0; 
+	list-style: none;
+} 
+
+.nav li{
+	display: block;
+}
+
+
+.nav a {
+	display: block;
+	position: relative;
+	padding: 1em;
+	background: lavender;
+	transition: all 1s ease-out;
+}
+
+
+.nav a:hover {
+	color: white;
+	background: black;
+	transition-duration: .3s;
+}
+
+.nav a:after {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	width: 0%;
+	height: 100%;
+	background: grey;
+	transition: all .3s ease-in;
+}
+
+.nav a:hover:after{
+	width: 100%
+	}
+.nav.center{
+	text-align: center;
+}
+
+@media (min-width:  500px) {
+	.nav.fit{
+		display: table;
+		width:100%;
+	}
+
+	.nav.fit li{
+		display:table-cell;
+	}
+	
+	.nav.fit a{
+		display:block;
+	}
+
+}
+
+.main-content{
+	background: pink;
+}
+
+.sub-content{	
+	background: orange;
+}
+	
+@media (min-width: 500px) {
+	.main-content {
+	float: left;
+	width: 60%;
+	margin-left: 20%;
+
+	}
+	
+	.sub-content{
+	float: left;
+	width: 20%;
+	margin-left: -80%;
+	}
+	
+	.third-content {
+	float: left;
+	width: 20%;
+}	
+	
+}	
+	
+	
+	
+	
+.bar  {
+
+}
+
+#primary-nav {
+
+}
+
