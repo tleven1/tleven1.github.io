@@ -116,6 +116,14 @@ a {
   box-shadow: 1px 0px 0px hsla(200, 100%, 50%, .3), -1px 0px 0px hsla(200, 100%, 50%, .3);
 }
 
+
+.block-overlay__src {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+
 .grid-list {
 	padding-left: 0;
 	margin-left: 0;
