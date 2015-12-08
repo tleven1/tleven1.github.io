@@ -12,3 +12,7 @@ h1  {
   text-transform: uppercase;
   color: rgba(127, 255, 0, .5);
 }
+
+img {
+	padding: 20px;
+}

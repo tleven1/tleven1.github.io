@@ -183,6 +183,11 @@ a {
 	transition-duration: 0.3s;
 }
 
+.primary__link {
+	color: silver;
+	font-size: 30px;
+}
+
 .site-masthead__primary { 
 	position: absolute;
 	top: 50%;
@@ -282,3 +287,14 @@ a {
 	color: lavender
 	
 }
+
+.block-overlay__content {
+	padding-bottom: 25px;
+	margin-bottom: 25px;
+}
+
+.l-home {
+	color: silver;
+}
+
+

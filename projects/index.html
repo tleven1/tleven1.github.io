@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Taylor Leventhal's Graphic Design Portfolio </title>
+    <title>Taylor Leventhal's Projects</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -16,20 +16,20 @@
     Normalize
     Eric Meyer's Reset
     -->
-    <link rel="stylesheet" href="css/vendor/sanitize.css">
+    <link rel="stylesheet" href="../css/vendor/sanitize.css">
     <!-- <link rel="stylesheet" href="css/vendor/normalize.css"> -->
     <!-- <link rel="stylesheet" href="css/vendor/reset.css"> -->
 
     <!--
     @NOTE Enable Skeleton's Grid
     -->
-    <link rel="stylesheet" href="css/vendor/skeleton.css">
+    <link rel="stylesheet" href="../css/vendor/skeleton.css">
 
     <!--
     @NOTE Enable Boilerplate's helpers
     This include some simple utility classes
     -->
-    <link rel="stylesheet" href="css/vendor/boilerplate.css">
+    <link rel="stylesheet" href="../css/vendor/boilerplate.css">
 
     <!--
     @NOTE Enable Skeleton's basic styling
@@ -38,8 +38,8 @@
     <!-- <link rel="stylesheet" href="css/vendor/skeleton-styles.css"> -->
 
 
-    <link rel="stylesheet" href="css/main.css">
-     
+    <link rel="stylesheet" href="../css/main.css">
+         
      <script>
      	/*!
 loadCSS: load a CSS file asynchronously.
@@ -114,10 +114,12 @@ Licensed MIT
 	<link rel="stylesheet" href="css/custom.css">
 </noscript>
     
+     <link rel="stylesheet" href="../css/custom.css">
+
     <!-- Modernizr detects a browsers different capabilities -->
-    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
   </head>
-  <body class="l-home ">
+  <body class="l-posts">
     <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
@@ -131,20 +133,19 @@ Licensed MIT
     			<strong class="visuallyhidden">primary navigation</strong> 
     			<ul class="site-masthead__primary nav" role="menubar">
     				<li class="primary__item">
-    					<a class="primary__link" href="posts/index.html">
+    					<a class="primary__link" href="../posts/index.html">
     						Posts
     					</a>
     				</li>
     			
 	    				<li class="primary__item">
-    					<a class="primary__link" href="projects/index.html">
-    					
+    					<a class="primary__link" href="../projects/index.html">
     						Projects
     					</a>
     				</li>
     		
     			    	<li class="primary__item">
-    					<a class="primary__link" href="about/index.html">
+    					<a class="primary__link" href="../about/index.html">
     						About
     					</a>
     				</li>
@@ -152,36 +153,42 @@ Licensed MIT
     		</nav>
     	</div>
     	</header>
-    
-    <div class="site-content">
-		<div class="full-hero">
-			<div class="full-hero__content">
-				<div class="container">
-					<p class="knockout">My portfolio</p>			
-				</div>
-			</div>
-		</div>
-		
-		<ul class="featured-list">
-			<li class="featured-list__item">
-				<a href="projects/project-01.html" class="featured-item__link">
-					<div class="featured-item__body">
-						<div class="container">
-							<h3 class="featured-item__heading">
-								Towson Galleries
-							</h3>
-							<p>description of my awesome project</p>
-						</div>
-					</div>				
-					<img class="featured-item__img" src="http://fillmurray.com/700/300" alt="">
+
+	<div class="site-content">
+		<div class= container">
+		<ul class="grid-list">
+			<li class="grid-list__item">
+				<a class="block-overlay" href="project_1.html">
+			
+					<img class="block-overlay__src" src="../images/project_1/mica_gallery_map-thumbnail.jpg" alt="">
+					<h3 class="block-overlay__content">Project 1</h3>
 				</a>
-			</li>		
-		</ul>
-    </div>
+			</li>
+			<li class="grid-list__item">
+				<a class="block-overlay" href="project_2.html">
+			
+				<img class="block-overlay__src" src="../images/project_2/slide-thumbnail.jpg" alt="">
+					<h3 class="block-overlay__content">Project 2</h3>
+				</a>
+			</li>
+			<li class="grid-list__item">
+				<a class="block-overlay" href="project_3.html">
+			
+				<img class="block-overlay__src" src="../images/project_3/soon.png" alt="">
+					<h3 class="block-overlay__content">Project 3</h3>
+				</a>
+			</li>
+			
+					<li class="grid-list__placeholder"></li>
+					<li class="grid-list__placeholder"></li>
+			</ul>
+	</div>
+	</div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+    <script src="../js/plugins.js"></script>
+    <script src="../js/main.js"></script>
 
     <!--
     @NOTE Google Analytics:
