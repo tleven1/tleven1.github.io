@@ -147,7 +147,7 @@ a {
 
 .l-home .site-masthead {
 	position: absolute;
-	z-index: 2;
+	z-index: 3;
 	top: 0;
 	left: 0;
 	width:100%;
@@ -164,19 +164,23 @@ a {
 
 .site-masthead__menu {
 	position: fixed;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
+	max-height: 0;
+	overflow: hidden;
 	z-index: 1;
 	background: #000;
-	transition: all .3s ease-out;
+	transition: all 0s ease-out;
 	opacity: 0;
 }
 
 .show-nav .site-masthead__menu {
 	opacity: 1;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	max-height: 100%;
 	z-index: 10;
+	transition-duration: 0.3s;
 }
 
 .site-masthead__primary { 
@@ -188,28 +192,93 @@ a {
 
 .site-content {
 	position: relative;
-	z-index: 1;
+	z-index: 2;
 }
 
 .l-home .site-content {
+	height: 100%;
+
+}
+
+.full-hero {
 	position: relative;
 	z-index: 1;
-	height: 100%;
+	height: 90%;
 	background: url('http://fillmurray.com/1000/1000') center center no-repeat;
 	background-size: cover;
 }
 
-.l-home .site-content:after {
+.full-hero:after {
 	content: '';
 	position: absolute;
 	top: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background-color: Lavender;
+	background-color: transparent;
 	}
 
-.primary__link {
+
+.full-hero__content {
+	position: absolute;
+	bottom: 10vh;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+	}
+	
+.knockout {
+	display:inline-block;
+	padding: .5em;
+	font-size: 36px;
+	color: #fff;
+	background-color: rgba(200, 175, 10, .8);
+}
+
+.featured-list__item {
+	overflow: hidden;
+	}
+
+.featured-list__item,
+.featured-item__link {
+	position: relative;
+}
+
+.featured-item__link {
+	display: block;
+	padding: 200px 0;
+}
+
+.featured-item__link:Link,
+.featured-item__link:Active,
+.featured-item__link:Visited {
+	color: white;
+}
+
+.featured-item__link:hover,
+.featured-item__link:focus {
+	color: red;
+}
+
+.featured-item__body {
+	position: relative;
+	z-index: 10;
+	background-color: transparent;
+	}
+
+
+.featured-item__img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 100%;
+	height: auto;
+}
+
+
+}
+.primary__link { 
 	color: lavender
 	
 }
